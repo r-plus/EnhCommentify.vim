@@ -716,7 +716,7 @@ function s:GetFileTypeSettings(ft)
     " Multipart comments:
     elseif fileType =~ '^\(c\|b\|css\|csc\|cupl\|indent\|jam\|lex\|lifelines\|'.
 		\ 'lite\|nqc\|phtml\|progress\|rexx\|rpl\|sas\|sdl\|sl\|'.
-		\ 'strace\|xpm\|yacc\)$'
+		\ 'strace\|xpm\|yacc\|objc\|objcpp\)$'
 	let b:ECcommentOpen = '/*'
 	let b:ECcommentClose = '*/'
     elseif fileType =~ '^\(html\|xhtml\|xml\|xslt\|xsd\|dtd\|sgmllnx\)$'
@@ -758,7 +758,7 @@ function s:GetFileTypeSettings(ft)
 		\ 'clipper\|cs\|dot\|dylan\|hercules\|idl\|ishd\|javascript\|'.
 		\ 'kscript\|mel\|named\|openroad\|pccts\|pfmain\|pike\|'.
 		\ 'pilrc\|plm\|pov\|rc\|scilab\|specman\|tads\|tsalt\|uc\|'.
-		\ 'xkb\)$'
+		\ 'xkb\objc\|objcpp\)$'
 	let b:ECcommentOpen = '//'
 	let b:ECcommentClose = ''
     elseif fileType =~ '^\(vim\|abel\)$'
